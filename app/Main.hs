@@ -66,4 +66,4 @@ main = do
         Nothing ->
             putStr usage
         Just (Token tok) ->
-            run tok $ sayToChannel chat msg
+            run ("bot" ++ tok) $ sayToChannel chat msg
